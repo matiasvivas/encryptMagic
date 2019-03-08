@@ -1,0 +1,77 @@
+{
+  "_from": "hybrid-crypto-js",
+  "_id": "hybrid-crypto-js@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha1-ydqQssJW3qnMWbeAV1lTcwGR/Ho=",
+  "_location": "/hybrid-crypto-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hybrid-crypto-js",
+    "name": "hybrid-crypto-js",
+    "escapedName": "hybrid-crypto-js",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hybrid-crypto-js/-/hybrid-crypto-js-0.1.6.tgz",
+  "_shasum": "c9da90b2c256dea9cc59b780575953730191fc7a",
+  "_spec": "hybrid-crypto-js",
+  "_where": "C:\\ITAU DEVELOPER\\itau-volar-app\\front\\ServicioParaComercio",
+  "author": {
+    "name": "Juho Enala",
+    "email": "juho.enala@gmail.com"
+  },
+  "babel": {
+    "presets": [
+      "react-native"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/juhoen/react-native-hybrid-crypto/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "node-forge": "^0.7.1"
+  },
+  "deprecated": false,
+  "description": "Hybrid (RSA+AES) encryption and decryption toolkit for JavaScript",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babelify": "^8.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "uglify-js": "^3.2.1"
+  },
+  "homepage": "https://github.com/juhoen/react-native-hybrid-crypto#readme",
+  "keywords": [
+    "rsa",
+    "aes",
+    "rsa+aes",
+    "react-native",
+    "react",
+    "native"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "hybrid-crypto-js",
+  "peerDependencies": {
+    "react-native": ">= 0.48.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhoen/react-native-hybrid-crypto.git"
+  },
+  "scripts": {
+    "test": "mocha --require babel-core/register -R spec",
+    "uglify": "uglifyjs web/hybrid-crypto.js -o web/hybrid-crypto.min.js",
+    "webpack": "browserify lib/webpack.js -o web/hybrid-crypto.js -t [ babelify --presets [ react-native ] ]"
+  },
+  "version": "0.1.6"
+}
